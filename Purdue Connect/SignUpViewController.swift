@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
 
@@ -14,7 +16,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var phoneNum: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var confirmPassword: UITextField!
     @IBOutlet weak var signUp: RoundButton!
     @IBOutlet weak var cancel: UIButton!
     
@@ -33,7 +34,17 @@ class SignUpViewController: UIViewController {
 //        performSegue(withIdentifier: "Sign Up", sender: UIButton.self)
 //    }
     
-    @IBAction func signUpPressed(_ sender: Any) {
+    var db: Firestore!
+    
+    @IBAction func signUpPressed(_ sender: UIButton) {
+        let usersRef = db.collection("sign up")
+        
+        usersRef.addDocument(data: [
+            "email": email.text!,
+            "phone number": phoneNum.text!,
+            "password": password.text!
+        ])
+        
     }
     
     

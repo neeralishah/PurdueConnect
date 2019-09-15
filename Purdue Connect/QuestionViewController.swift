@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class QuestionViewController: UIViewController {
     @IBOutlet weak var namePrompt: UILabel!
@@ -23,16 +25,52 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var course5: UITextField!
     @IBOutlet weak var course6: UITextField!
     
-    @IBAction func tutoringSelected(_ sender: Any) {
+    var db: Firestore!
+    
+    @IBAction func tutoringTapped(_ sender: UIButton) {
+        let usersRef = db.collection("users")
+        
+        usersRef.addDocument(data: [
+            "name": nameAnswer.text!,
+            "highSchoolName": highSchoolAnswer.text!,
+            "coursework": [
+                course1.text ?? "",
+                course2.text ?? "",
+                course3.text ?? "",
+                course4.text ?? "",
+                course5.text ?? "",
+                course6.text ?? ""
+                
+            ],
+            "tutoringVScounseling": "tutoring"
+            ])
     }
     
-    @IBAction func counselingSelected(_ sender: Any) {
+    @IBAction func counselingTapped(_ sender: UIButton) {
+        let usersRef = db.collection("users")
+        
+        usersRef.addDocument(data: [
+            "name": nameAnswer.text!,
+            "highSchoolName": highSchoolAnswer.text!,
+            "coursework": [
+                course1.text ?? "",
+                course2.text ?? "",
+                course3.text ?? "",
+                course4.text ?? "",
+                course5.text ?? "",
+                course6.text ?? ""
+                
+            ],
+            "tutoringVScounseling": "counseling"
+            ])
     }
     
-   
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let settings = FirestoreSettings()
+        Firestore.firestore().settings = settings
+        db = Firestore.firestore()
     }
     
     // function to check if at least one field is filled out for courses

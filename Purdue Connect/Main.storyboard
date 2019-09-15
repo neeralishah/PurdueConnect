@@ -91,36 +91,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-fP-fO6" customClass="RoundButton" customModule="Purdue_Connect" customModuleProvider="target">
-                                <rect key="frame" x="53" y="602" width="123" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Tutoring">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="tutoringSelected:" destination="YG4-Yw-Jbi" eventType="touchUpInside" id="qrJ-cy-XGW"/>
-                                    <action selector="tutoringSelected:forEvent:" destination="r60-8r-7Va" eventType="touchUpInside" id="cuU-Ij-oaM"/>
-                                    <segue destination="NEZ-c0-DPe" kind="show" id="5Hy-bh-4UY"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-TC-bVZ" customClass="RoundButton" customModule="Purdue_Connect" customModuleProvider="target">
-                                <rect key="frame" x="218" y="601" width="120" height="87"/>
+                                <rect key="frame" x="219" y="631" width="154" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="College/Career Counseling">
+                                        <fragment content="College Counseling">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="counselingSelected:" destination="YG4-Yw-Jbi" eventType="touchUpInside" id="zMO-IP-uao"/>
-                                    <action selector="counselingSelected:forEvent:" destination="r60-8r-7Va" eventType="touchUpInside" id="6vK-kr-Q8m"/>
+                                    <action selector="counselingTapped:" destination="r60-8r-7Va" eventType="touchUpInside" id="tOx-Do-4vA"/>
                                     <segue destination="QJu-3X-o4B" kind="show" id="G4F-cg-DQu"/>
                                 </connections>
                             </button>
@@ -131,6 +118,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-fP-fO6" customClass="RoundButton" customModule="Purdue_Connect" customModuleProvider="target">
+                                <rect key="frame" x="44" y="631" width="157" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Tutoring">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tutoringTapped:" destination="r60-8r-7Va" eventType="touchUpInside" id="dxW-df-wUk"/>
+                                    <segue destination="NEZ-c0-DPe" kind="show" id="5Hy-bh-4UY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Lfh-eK-UUN"/>
@@ -150,15 +149,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgi-wn-vC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="YG4-Yw-Jbi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3723" y="67"/>
+            <point key="canvasLocation" x="3721.739130434783" y="66.964285714285708"/>
         </scene>
         <!--Counseling View Controller-->
         <scene sceneID="Y4W-wB-DZo">
             <objects>
-                <exit id="0N6-2M-Gbk" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u4o-tu-AqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="QJu-3X-o4B" customClass="CounselingViewController" customModule="Purdue_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WiH-cG-Arn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -186,6 +182,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="jje-xg-Hzp"/>
                 </viewController>
+                <exit id="0N6-2M-Gbk" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4o-tu-AqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4462" y="323"/>
         </scene>
@@ -248,13 +246,6 @@
                                     <action selector="passwordTextField:" destination="Ske-5P-UaK" eventType="editingDidEnd" id="RMA-Jj-Q25"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AFg-eP-lMM">
-                                <rect key="frame" x="8" y="364" width="398" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uht-X6-eM1">
                                 <rect key="frame" x="8" y="256" width="398" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -295,7 +286,6 @@
                     </view>
                     <connections>
                         <outlet property="cancel" destination="2Fn-OP-Rdh" id="tDl-qU-CzA"/>
-                        <outlet property="confirmPassword" destination="AFg-eP-lMM" id="bhe-Jo-duT"/>
                         <outlet property="email" destination="5uE-Js-Nrs" id="9Js-5v-IRF"/>
                         <outlet property="password" destination="kWE-25-vPy" id="haz-EF-4yp"/>
                         <outlet property="phoneNum" destination="uht-X6-eM1" id="enI-ST-LgC"/>
@@ -386,6 +376,6 @@
         <image name="purdueWhite" width="2048" height="1536"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nRP-jx-sZm"/>
+        <segue reference="0ew-dK-TjH"/>
     </inferredMetricsTieBreakers>
 </document>
