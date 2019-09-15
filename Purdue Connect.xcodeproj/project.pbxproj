@@ -13,9 +13,11 @@
 		8AFAB7F5232DE69D005D259A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F4232DE69D005D259A /* Assets.xcassets */; };
 		8AFAB7F8232DE69D005D259A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F6232DE69D005D259A /* LaunchScreen.storyboard */; };
 		8AFAB802232DE79A005D259A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB801232DE79A005D259A /* GoogleService-Info.plist */; };
-		902C4305232E289800F0A9B1 /* SignUpViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C4304232E289800F0A9B1 /* SignUpViewController2.swift */; };
+		902C4305232E289800F0A9B1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C4304232E289800F0A9B1 /* SignUpViewController.swift */; };
+		902C4307232E2E2E00F0A9B1 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C4306232E2E2E00F0A9B1 /* QuestionViewController.swift */; };
+		902C4309232E39A900F0A9B1 /* DisplayImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C4308232E39A900F0A9B1 /* DisplayImageView.swift */; };
+		902C430B232E3E2600F0A9B1 /* TutoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C430A232E3E2600F0A9B1 /* TutoringViewController.swift */; };
 		9072CAAC232E0FB20087BC79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9072CAAB232E0FB20087BC79 /* Main.storyboard */; };
-		9072CAAE232E12CC0087BC79 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9072CAAD232E12CC0087BC79 /* SignUpPageViewController.swift */; };
 		9072CAB0232E144B0087BC79 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9072CAAF232E144A0087BC79 /* RoundButton.swift */; };
 		A9E1181CE11F3AB8A5144086 /* Pods_Purdue_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C37DB267D2FEBE45423625 /* Pods_Purdue_Connect.framework */; };
 /* End PBXBuildFile section */
@@ -30,9 +32,11 @@
 		8AFAB7F7232DE69D005D259A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AFAB7F9232DE69D005D259A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AFAB801232DE79A005D259A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		902C4304232E289800F0A9B1 /* SignUpViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController2.swift; sourceTree = "<group>"; };
+		902C4304232E289800F0A9B1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		902C4306232E2E2E00F0A9B1 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		902C4308232E39A900F0A9B1 /* DisplayImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImageView.swift; sourceTree = "<group>"; };
+		902C430A232E3E2600F0A9B1 /* TutoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutoringViewController.swift; sourceTree = "<group>"; };
 		9072CAAB232E0FB20087BC79 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		9072CAAD232E12CC0087BC79 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		9072CAAF232E144A0087BC79 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		91B94DA535679155033FAF84 /* Pods-Purdue Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Connect.debug.xcconfig"; path = "Target Support Files/Pods-Purdue Connect/Pods-Purdue Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		92C37DB267D2FEBE45423625 /* Pods_Purdue_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Purdue_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,9 +96,11 @@
 				8AFAB801232DE79A005D259A /* GoogleService-Info.plist */,
 				8AFAB7ED232DE69C005D259A /* AppDelegate.swift */,
 				8AFAB7EF232DE69C005D259A /* ViewController.swift */,
+				902C430A232E3E2600F0A9B1 /* TutoringViewController.swift */,
+				902C4308232E39A900F0A9B1 /* DisplayImageView.swift */,
+				902C4306232E2E2E00F0A9B1 /* QuestionViewController.swift */,
 				9072CAAF232E144A0087BC79 /* RoundButton.swift */,
-				902C4304232E289800F0A9B1 /* SignUpViewController2.swift */,
-				9072CAAD232E12CC0087BC79 /* SignUpPageViewController.swift */,
+				902C4304232E289800F0A9B1 /* SignUpViewController.swift */,
 				9072CAAB232E0FB20087BC79 /* Main.storyboard */,
 				8AFAB7F4232DE69D005D259A /* Assets.xcassets */,
 				8AFAB7F6232DE69D005D259A /* LaunchScreen.storyboard */,
@@ -222,9 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9072CAB0232E144B0087BC79 /* RoundButton.swift in Sources */,
-				902C4305232E289800F0A9B1 /* SignUpViewController2.swift in Sources */,
-				9072CAAE232E12CC0087BC79 /* SignUpPageViewController.swift in Sources */,
+				902C4307232E2E2E00F0A9B1 /* QuestionViewController.swift in Sources */,
+				902C430B232E3E2600F0A9B1 /* TutoringViewController.swift in Sources */,
+				902C4305232E289800F0A9B1 /* SignUpViewController.swift in Sources */,
 				8AFAB7F0232DE69C005D259A /* ViewController.swift in Sources */,
+				902C4309232E39A900F0A9B1 /* DisplayImageView.swift in Sources */,
 				8AFAB7EE232DE69C005D259A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
