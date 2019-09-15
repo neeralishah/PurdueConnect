@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A16DCDF232DEB5500581E71 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8A16DCDE232DEB5500581E71 /* .gitignore */; };
 		8AFAB7EE232DE69C005D259A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAB7ED232DE69C005D259A /* AppDelegate.swift */; };
 		8AFAB7F0232DE69C005D259A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAB7EF232DE69C005D259A /* ViewController.swift */; };
 		8AFAB7F3232DE69C005D259A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F1232DE69C005D259A /* Main.storyboard */; };
 		8AFAB7F5232DE69D005D259A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F4232DE69D005D259A /* Assets.xcassets */; };
 		8AFAB7F8232DE69D005D259A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F6232DE69D005D259A /* LaunchScreen.storyboard */; };
+		8AFAB802232DE79A005D259A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB801232DE79A005D259A /* GoogleService-Info.plist */; };
+		A9E1181CE11F3AB8A5144086 /* Pods_Purdue_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C37DB267D2FEBE45423625 /* Pods_Purdue_Connect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62D3DE8ED9AB1D1473657F1E /* Pods-Purdue Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Connect.release.xcconfig"; path = "Target Support Files/Pods-Purdue Connect/Pods-Purdue Connect.release.xcconfig"; sourceTree = "<group>"; };
+		8A16DCDE232DEB5500581E71 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8AFAB7EA232DE69C005D259A /* Purdue Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Purdue Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFAB7ED232DE69C005D259A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AFAB7EF232DE69C005D259A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		8AFAB7F4232DE69D005D259A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AFAB7F7232DE69D005D259A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AFAB7F9232DE69D005D259A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFAB801232DE79A005D259A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91B94DA535679155033FAF84 /* Pods-Purdue Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Connect.debug.xcconfig"; path = "Target Support Files/Pods-Purdue Connect/Pods-Purdue Connect.debug.xcconfig"; sourceTree = "<group>"; };
+		92C37DB267D2FEBE45423625 /* Pods_Purdue_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Purdue_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E1181CE11F3AB8A5144086 /* Pods_Purdue_Connect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D334D332F0215932D1F939A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91B94DA535679155033FAF84 /* Pods-Purdue Connect.debug.xcconfig */,
+				62D3DE8ED9AB1D1473657F1E /* Pods-Purdue Connect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74D39C5BBE42F15BF7DEFF6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92C37DB267D2FEBE45423625 /* Pods_Purdue_Connect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AFAB7E1232DE69C005D259A = {
 			isa = PBXGroup;
 			children = (
+				8A16DCDE232DEB5500581E71 /* .gitignore */,
 				8AFAB7EC232DE69C005D259A /* Purdue Connect */,
 				8AFAB7EB232DE69C005D259A /* Products */,
+				6D334D332F0215932D1F939A /* Pods */,
+				74D39C5BBE42F15BF7DEFF6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +83,7 @@
 		8AFAB7EC232DE69C005D259A /* Purdue Connect */ = {
 			isa = PBXGroup;
 			children = (
+				8AFAB801232DE79A005D259A /* GoogleService-Info.plist */,
 				8AFAB7ED232DE69C005D259A /* AppDelegate.swift */,
 				8AFAB7EF232DE69C005D259A /* ViewController.swift */,
 				8AFAB7F1232DE69C005D259A /* Main.storyboard */,
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AFAB7FC232DE69D005D259A /* Build configuration list for PBXNativeTarget "Purdue Connect" */;
 			buildPhases = (
+				A3B5AE19CAE36DF5449CA8B3 /* [CP] Check Pods Manifest.lock */,
 				8AFAB7E6232DE69C005D259A /* Sources */,
 				8AFAB7E7232DE69C005D259A /* Frameworks */,
 				8AFAB7E8232DE69C005D259A /* Resources */,
+				E425A615436D7B715EF9FD82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,13 +154,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A16DCDF232DEB5500581E71 /* .gitignore in Resources */,
 				8AFAB7F8232DE69D005D259A /* LaunchScreen.storyboard in Resources */,
+				8AFAB802232DE79A005D259A /* GoogleService-Info.plist in Resources */,
 				8AFAB7F5232DE69D005D259A /* Assets.xcassets in Resources */,
 				8AFAB7F3232DE69C005D259A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3B5AE19CAE36DF5449CA8B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Purdue Connect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E425A615436D7B715EF9FD82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Purdue Connect/Pods-Purdue Connect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Purdue Connect/Pods-Purdue Connect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Purdue Connect/Pods-Purdue Connect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AFAB7E6232DE69C005D259A /* Sources */ = {
@@ -280,6 +356,7 @@
 		};
 		8AFAB7FD232DE69D005D259A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B94DA535679155033FAF84 /* Pods-Purdue Connect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		8AFAB7FE232DE69D005D259A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D3DE8ED9AB1D1473657F1E /* Pods-Purdue Connect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

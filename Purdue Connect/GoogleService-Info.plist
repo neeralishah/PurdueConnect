@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>784200980293-a23c3bm2sl6apk655p66ldql26t27pog.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.784200980293-a23c3bm2sl6apk655p66ldql26t27pog</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDyY-stLce7mKkFaPMleEpL6-SnIo8mhVg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>784200980293</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.NeeraliShah.Purdue-Connect</string>
+	<key>PROJECT_ID</key>
+	<string>purdue-market</string>
+	<key>STORAGE_BUCKET</key>
+	<string>purdue-market.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:784200980293:ios:8167d9827b7fecfeed902c</string>
+	<key>DATABASE_URL</key>
+	<string>https://purdue-market.firebaseio.com</string>
+</dict>
+</plist>
