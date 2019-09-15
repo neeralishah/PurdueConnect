@@ -10,10 +10,10 @@
 		8A16DCDF232DEB5500581E71 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8A16DCDE232DEB5500581E71 /* .gitignore */; };
 		8AFAB7EE232DE69C005D259A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAB7ED232DE69C005D259A /* AppDelegate.swift */; };
 		8AFAB7F0232DE69C005D259A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAB7EF232DE69C005D259A /* ViewController.swift */; };
-		8AFAB7F3232DE69C005D259A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F1232DE69C005D259A /* Main.storyboard */; };
 		8AFAB7F5232DE69D005D259A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F4232DE69D005D259A /* Assets.xcassets */; };
 		8AFAB7F8232DE69D005D259A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB7F6232DE69D005D259A /* LaunchScreen.storyboard */; };
 		8AFAB802232DE79A005D259A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AFAB801232DE79A005D259A /* GoogleService-Info.plist */; };
+		9072CAAC232E0FB20087BC79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9072CAAB232E0FB20087BC79 /* Main.storyboard */; };
 		A9E1181CE11F3AB8A5144086 /* Pods_Purdue_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C37DB267D2FEBE45423625 /* Pods_Purdue_Connect.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +23,11 @@
 		8AFAB7EA232DE69C005D259A /* Purdue Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Purdue Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFAB7ED232DE69C005D259A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AFAB7EF232DE69C005D259A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8AFAB7F2232DE69C005D259A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AFAB7F4232DE69D005D259A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AFAB7F7232DE69D005D259A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AFAB7F9232DE69D005D259A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AFAB801232DE79A005D259A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9072CAAB232E0FB20087BC79 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		91B94DA535679155033FAF84 /* Pods-Purdue Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Connect.debug.xcconfig"; path = "Target Support Files/Pods-Purdue Connect/Pods-Purdue Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		92C37DB267D2FEBE45423625 /* Pods_Purdue_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Purdue_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 				8AFAB801232DE79A005D259A /* GoogleService-Info.plist */,
 				8AFAB7ED232DE69C005D259A /* AppDelegate.swift */,
 				8AFAB7EF232DE69C005D259A /* ViewController.swift */,
-				8AFAB7F1232DE69C005D259A /* Main.storyboard */,
+				9072CAAB232E0FB20087BC79 /* Main.storyboard */,
 				8AFAB7F4232DE69D005D259A /* Assets.xcassets */,
 				8AFAB7F6232DE69D005D259A /* LaunchScreen.storyboard */,
 				8AFAB7F9232DE69D005D259A /* Info.plist */,
@@ -156,10 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A16DCDF232DEB5500581E71 /* .gitignore in Resources */,
+				9072CAAC232E0FB20087BC79 /* Main.storyboard in Resources */,
 				8AFAB7F8232DE69D005D259A /* LaunchScreen.storyboard in Resources */,
 				8AFAB802232DE79A005D259A /* GoogleService-Info.plist in Resources */,
 				8AFAB7F5232DE69D005D259A /* Assets.xcassets in Resources */,
-				8AFAB7F3232DE69C005D259A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,14 +220,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8AFAB7F1232DE69C005D259A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AFAB7F2232DE69C005D259A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8AFAB7F6232DE69D005D259A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
