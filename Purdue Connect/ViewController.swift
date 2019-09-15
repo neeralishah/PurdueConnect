@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // This will run every time the View is opened
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
