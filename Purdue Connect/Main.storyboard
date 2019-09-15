@@ -39,13 +39,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9v-DG-gZL">
-                                <rect key="frame" x="20" y="125" width="353" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="epY-Gv-1mi">
                                 <rect key="frame" x="20" y="218" width="353" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -87,6 +80,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="r60-8r-7Va" id="KFU-wJ-zx8"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAa-jQ-Kch">
                                 <rect key="frame" x="20" y="509" width="353" height="30"/>
@@ -103,8 +99,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="tutoringSelected:" destination="YG4-Yw-Jbi" eventType="touchUpInside" id="qrJ-cy-XGW"/>
                                     <action selector="tutoringSelected:forEvent:" destination="r60-8r-7Va" eventType="touchUpInside" id="cuU-Ij-oaM"/>
-                                    <segue destination="NEZ-c0-DPe" kind="show" id="C2X-gT-szr"/>
+                                    <segue destination="NEZ-c0-DPe" kind="show" id="5Hy-bh-4UY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-TC-bVZ" customClass="RoundButton" customModule="Purdue_Connect" customModuleProvider="target">
@@ -122,15 +119,23 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="counselingSelected:" destination="YG4-Yw-Jbi" eventType="touchUpInside" id="zMO-IP-uao"/>
                                     <action selector="counselingSelected:forEvent:" destination="r60-8r-7Va" eventType="touchUpInside" id="6vK-kr-Q8m"/>
+                                    <segue destination="QJu-3X-o4B" kind="show" id="G4F-cg-DQu"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9v-DG-gZL">
+                                <rect key="frame" x="20" y="125" width="353" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Lfh-eK-UUN"/>
                     </view>
                     <connections>
-                        <outlet property="counselingButton" destination="8Y0-TC-bVZ" id="HSN-As-Ubh"/>
                         <outlet property="course1" destination="3gw-wD-KNH" id="jGk-1E-5jf"/>
                         <outlet property="course2" destination="qyi-WR-dBS" id="ifS-9g-Qkl"/>
                         <outlet property="course3" destination="DSb-E4-xDD" id="FeY-ek-BKH"/>
@@ -142,13 +147,47 @@
                         <outlet property="highSchoolPrompt" destination="mUl-Qt-nmg" id="lQi-d4-jKt"/>
                         <outlet property="nameAnswer" destination="X9v-DG-gZL" id="oy9-D4-wIq"/>
                         <outlet property="namePrompt" destination="aas-7l-pTK" id="Mel-cN-3iQ"/>
-                        <outlet property="tutoringButton" destination="fzg-fP-fO6" id="2zY-4Y-Erd"/>
-                        <outlet property="tutoringSelected" destination="fzg-fP-fO6" id="YKf-p6-Edn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgi-wn-vC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="YG4-Yw-Jbi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3723" y="67"/>
+        </scene>
+        <!--Counseling View Controller-->
+        <scene sceneID="Y4W-wB-DZo">
+            <objects>
+                <exit id="0N6-2M-Gbk" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4o-tu-AqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="QJu-3X-o4B" customClass="CounselingViewController" customModule="Purdue_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WiH-cG-Arn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9q-qX-17x">
+                                <rect key="frame" x="35" y="56" width="48" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="G6D-lB-8cw"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelCounseling:" destination="0N6-2M-Gbk" eventType="touchUpInside" id="DbE-EG-0vs"/>
+                                    <action selector="cancelPressed:" destination="Na0-HF-xAq" eventType="touchUpInside" id="sVB-CJ-6i2"/>
+                                    <segue destination="r60-8r-7Va" kind="show" id="qGh-mh-2Xo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D9q-qX-17x" firstAttribute="top" secondItem="Czs-xD-M8m" secondAttribute="top" constant="12" id="SvH-xE-yyk"/>
+                            <constraint firstItem="D9q-qX-17x" firstAttribute="leading" secondItem="Czs-xD-M8m" secondAttribute="leading" constant="35" id="aKJ-Of-tjf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Czs-xD-M8m"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jje-xg-Hzp"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4462" y="323"/>
         </scene>
         <!--Tutoring View Controller-->
         <scene sceneID="t7P-V2-bBM">
@@ -157,13 +196,32 @@
                     <view key="view" contentMode="scaleToFill" id="p9h-9s-uhj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFU-OS-aZ6">
+                                <rect key="frame" x="20" y="44" width="48" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="W9H-jA-iBI"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="Na0-HF-xAq" eventType="touchUpInside" id="TcT-O9-b8q"/>
+                                    <action selector="cancelTutoring:" destination="oHm-Yr-X9K" eventType="touchUpInside" id="Edm-rF-I1F"/>
+                                    <segue destination="r60-8r-7Va" kind="show" id="nRP-jx-sZm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KFU-OS-aZ6" firstAttribute="top" secondItem="Y8w-FG-HqE" secondAttribute="top" id="KhI-hM-Hlh"/>
+                            <constraint firstItem="KFU-OS-aZ6" firstAttribute="leading" secondItem="p9h-9s-uhj" secondAttribute="leadingMargin" id="NuI-y2-IDf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Y8w-FG-HqE"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ym-v8-Y59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oHm-Yr-X9K" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4457" y="-439"/>
+            <point key="canvasLocation" x="4461" y="-343"/>
         </scene>
         <!--SignUpPage-->
         <scene sceneID="XRg-By-rkS">
@@ -197,15 +255,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fn-OP-Rdh">
-                                <rect key="frame" x="12" y="44" width="64" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <action selector="cancelPressed:forEvent:" destination="Na0-HF-xAq" eventType="touchUpInside" id="D4R-FY-gHs"/>
-                                    <segue destination="a2N-Vp-Khf" kind="show" identifier="cancelToHome" id="3h2-vI-538"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uht-X6-eM1">
                                 <rect key="frame" x="8" y="256" width="398" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -214,50 +263,49 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgp-yV-A35" customClass="RoundButton" customModule="Purdue_Connect" customModuleProvider="target">
-                                <rect key="frame" x="44" y="452" width="327" height="51"/>
+                                <rect key="frame" x="44" y="450" width="327" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpPressed:" destination="Na0-HF-xAq" eventType="touchUpInside" id="gZK-nC-dbh"/>
-                                    <action selector="signUpPressed:forEvent:" destination="Na0-HF-xAq" eventType="touchUpInside" id="LBJ-pJ-KBW"/>
-                                    <segue destination="r60-8r-7Va" kind="show" id="StZ-Sn-6dT"/>
+                                    <action selector="signUpPressed:" destination="Na0-HF-xAq" eventType="touchUpInside" id="E1F-ek-Jxo"/>
+                                    <segue destination="r60-8r-7Va" kind="show" id="0ew-dK-TjH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Error: passwords do not match" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRR-K2-jyB">
-                                <rect key="frame" x="96" y="166" width="223" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="0.036245735243500832" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fn-OP-Rdh">
+                                <rect key="frame" x="28" y="44" width="48" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Zho-rJ-Z4R"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="errorAppear:forEvent:" destination="a2N-Vp-Khf" eventType="editingDidEnd" id="W7B-m7-dwS"/>
-                                    <action selector="printError:forEvent:" destination="Na0-HF-xAq" eventType="editingDidEnd" id="120-Kx-vKV"/>
+                                    <action selector="cancelPressed:" destination="Na0-HF-xAq" eventType="touchUpInside" id="3dn-z3-pqy"/>
+                                    <segue destination="a2N-Vp-Khf" kind="show" identifier="cancelToHome" id="3h2-vI-538"/>
                                 </connections>
-                            </textField>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Fn-OP-Rdh" firstAttribute="top" secondItem="uzb-Rs-4am" secondAttribute="top" id="elS-7P-quM"/>
+                            <constraint firstItem="uzb-Rs-4am" firstAttribute="trailing" secondItem="2Fn-OP-Rdh" secondAttribute="trailing" constant="338" id="sS6-6P-8wk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uzb-Rs-4am"/>
                     </view>
                     <connections>
+                        <outlet property="cancel" destination="2Fn-OP-Rdh" id="tDl-qU-CzA"/>
                         <outlet property="confirmPassword" destination="AFg-eP-lMM" id="bhe-Jo-duT"/>
                         <outlet property="email" destination="5uE-Js-Nrs" id="9Js-5v-IRF"/>
-                        <outlet property="emailTextField" destination="5uE-Js-Nrs" id="ETg-bg-O6q"/>
-                        <outlet property="errorMessage" destination="PRR-K2-jyB" id="cSf-kc-Q7g"/>
                         <outlet property="password" destination="kWE-25-vPy" id="haz-EF-4yp"/>
-                        <outlet property="passwordTextField" destination="kWE-25-vPy" id="R7O-qw-Vlh"/>
-                        <outlet property="passwordVerify" destination="AFg-eP-lMM" id="6d9-px-h46"/>
                         <outlet property="phoneNum" destination="uht-X6-eM1" id="enI-ST-LgC"/>
-                        <outlet property="phoneNumberTextField" destination="uht-X6-eM1" id="WUU-zZ-ncs"/>
-                        <outlet property="signUpButton" destination="pgp-yV-A35" id="hxE-oi-sBC"/>
+                        <outlet property="signUp" destination="pgp-yV-A35" id="cSV-3Y-Ld1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qv-hP-YsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Ske-5P-UaK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3722" y="789"/>
+            <point key="canvasLocation" x="3434.7826086956525" y="789.50892857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xmL-kV-ETP">
@@ -268,7 +316,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYB-pV-l3w" customClass="RoundButton" customModule="Purdue_Connect" customModuleProvider="target">
-                                <rect key="frame" x="44" y="465" width="327" height="51"/>
+                                <rect key="frame" x="43" y="463" width="327" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -276,16 +324,13 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButtonPressed:" destination="a2N-Vp-Khf" eventType="touchUpInside" id="H1B-iR-ivd"/>
-                                    <action selector="loginEntered:" destination="Z4i-Og-wjM" eventType="touchUpInside" id="3VP-j1-Pih"/>
-                                    <action selector="loginPressed:forEvent:" destination="a2N-Vp-Khf" eventType="touchUpInside" id="aT0-qE-N0U"/>
+                                    <action selector="loginPushed:" destination="Z4i-Og-wjM" eventType="touchUpInside" id="k2P-lp-pxt"/>
                                     <segue destination="r60-8r-7Va" kind="show" id="Rqv-oq-1nP"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Don't have an account?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-60-K58">
                                 <rect key="frame" x="66" y="810" width="189" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -298,30 +343,16 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpPressed:forEvent:" destination="a2N-Vp-Khf" eventType="touchUpInside" id="GRA-hY-a2U"/>
-                                    <segue destination="Na0-HF-xAq" kind="show" id="Eio-VD-TYE"/>
+                                    <action selector="signUpPushed:" destination="Z4i-Og-wjM" eventType="touchUpInside" id="AJy-AJ-uts"/>
+                                    <segue destination="Na0-HF-xAq" kind="show" id="FvI-9p-uEg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Error: email or password is incorrect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kGr-WA-iN4">
-                                <rect key="frame" x="62" y="317" width="290" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="0.03624573524" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="errorAppear:forEvent:" destination="a2N-Vp-Khf" eventType="editingDidEnd" id="6pO-sr-xiC"/>
-                                    <action selector="printError:forEvent:" destination="Na0-HF-xAq" eventType="editingDidEnd" id="M2C-Zn-Kgf"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ybd-8r-QNx">
                                 <rect key="frame" x="8" y="401" width="398" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                <connections>
-                                    <action selector="passwordTextField:" destination="Ske-5P-UaK" eventType="editingDidEnd" id="uyI-YA-Syq"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lU5-UY-wF9">
                                 <rect key="frame" x="8" y="346" width="398" height="30"/>
@@ -330,22 +361,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SIX_FB7ECDDB-1B03-43D8-A917-8FAE7A63C1C4" translatesAutoresizingMaskIntoConstraints="NO" id="FbD-L7-4zn" customClass="DisplayImageView" customModule="Purdue_Connect" customModuleProvider="target">
-                                <rect key="frame" x="114" y="55" width="186" height="170"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purdueWhite" translatesAutoresizingMaskIntoConstraints="NO" id="FbD-L7-4zn" customClass="DisplayImageView" customModule="Purdue_Connect" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DfY-G2-7mQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="gZg-j0-mxK"/>
                     <connections>
                         <outlet property="email" destination="lU5-UY-wF9" id="9MR-Xo-6jI"/>
-                        <outlet property="errorMessage" destination="kGr-WA-iN4" id="ylg-vi-5x2"/>
-                        <outlet property="loginButton" destination="IYB-pV-l3w" id="E44-Uf-6At"/>
                         <outlet property="noAccountPrompt" destination="6ww-60-K58" id="QwJ-Uc-dKQ"/>
                         <outlet property="password" destination="Ybd-8r-QNx" id="cIz-T5-K2g"/>
-                        <outlet property="signUpButton" destination="0yL-ul-hDv" id="0By-tL-3td"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGb-ks-9n4" sceneMemberID="firstResponder"/>
@@ -355,9 +383,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SIX_FB7ECDDB-1B03-43D8-A917-8FAE7A63C1C4" width="1137" height="1137"/>
+        <image name="purdueWhite" width="2048" height="1536"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rqv-oq-1nP"/>
+        <segue reference="nRP-jx-sZm"/>
     </inferredMetricsTieBreakers>
 </document>

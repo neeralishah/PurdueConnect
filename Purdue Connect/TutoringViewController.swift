@@ -15,6 +15,8 @@ class TutoringViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func cancelTutoring(_ sender: Any) {
+    }
     
 
 }

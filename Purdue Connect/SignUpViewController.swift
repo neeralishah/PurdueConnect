@@ -12,24 +12,11 @@ class SignUpViewController: UIViewController {
 
     
     @IBOutlet weak var email: UITextField!
-    
     @IBOutlet weak var phoneNum: UITextField!
-    
     @IBOutlet weak var password: UITextField!
-    
     @IBOutlet weak var confirmPassword: UITextField!
-    
-    @IBOutlet weak var errorMessage: UITextField!
-    
-    @IBAction func printError(_ sender: UITextField, forEvent event: UIEvent) {
-        if !password.isEqual(confirmPassword) {
-            print(errorMessage!)
-        }
-    }
-    
-    @IBAction func signUpPressed(_ sender: Any, forEvent event: UIEvent) {}
-    
-    @IBAction func cancelPressed(_ sender: Any, forEvent event: UIEvent) {}
+    @IBOutlet weak var signUp: RoundButton!
+    @IBOutlet weak var cancel: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,23 +26,27 @@ class SignUpViewController: UIViewController {
 //                password.delegate = self as? UITextFieldDelegate
     }
     
-//    @IBAction func cancelPressed(_ sender: Any, forEvent event: UIEvent) {
+//    @IBAction func cancelPressed(_ sender: Any) {
+//        performSegue(withIdentifier: "Cancel", sender: UIButton.self)
 //    }
-//
-//    @IBAction func signUpPressed(_ sender: Any, forEvent event: UIEvent) {
+//    @IBAction func signUpPressed(_ sender: Any) {
+//        performSegue(withIdentifier: "Sign Up", sender: UIButton.self)
 //    }
     
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        phoneNum.resignFirstResponder()
+    @IBAction func signUpPressed(_ sender: Any) {
     }
-
+    
+    
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        phoneNum.resignFirstResponder()
+//    }
 }
 
-//extension ViewController : UITextFieldDelegate {
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        textField.resignFirstResponder()
-//
-//        return true
-//    }
-//}
+extension SignUpViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+
+        return true
+    }
+}

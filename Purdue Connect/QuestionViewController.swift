@@ -23,10 +23,11 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var course5: UITextField!
     @IBOutlet weak var course6: UITextField!
     
-    @IBOutlet weak var tutoringButton: UIButton!
-    @IBOutlet weak var counselingButton: UIButton!
-
-    @IBAction func tutoringSelected(_ sender: Any, forEvent event: UIEvent) {}
+    @IBAction func tutoringSelected(_ sender: Any) {
+    }
+    
+    @IBAction func counselingSelected(_ sender: Any) {
+    }
     
    
     override func viewDidLoad() {
